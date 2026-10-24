@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Nayeon Kim | PhD Candidate in Consumer Economics</title>
+<meta content="Nayeon Kim is a PhD Candidate in Consumer Economics at the University of Georgia. Research: Responsible AI through a Consumer Lens." name="description"/>
+<meta content="Nayeon Kim" name="author"/>
+<meta content="Nayeon Kim, PhD Candidate, Consumer Economics, University of Georgia, Responsible AI, consumer preferences, algorithmic fairness" name="keywords"/>
+<link href="https://lionnayeon.github.io/" rel="canonical"/>
+<meta content="profile" property="og:type"/>
+<meta content="Nayeon Kim | Responsible AI through a Consumer Lens" property="og:title"/>
+<meta content="PhD Candidate in Consumer Economics at the University of Georgia." property="og:description"/>
+<meta content="https://lionnayeon.github.io/" property="og:url"/>
+<meta content="https://lionnayeon.github.io/profile.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://lionnayeon.github.io/profile.jpg" name="twitter:image"/>
+<meta content="#faf7f0" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#15120e" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<link href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23f5bfdc%22%2F%3E%3Cstop%20offset%3D%220.5%22%20stop-color%3D%22%23eae5fb%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23bce6fa%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22url%28%23g%29%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2234%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2CHelvetica%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%20fill%3D%22%23303247%22%3ENK%3C%2Ftext%3E%3C%2Fsvg%3E" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&amp;family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.24.0/dist/tabler-icons.min.css" rel="stylesheet"/>
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (!t) t = "light"; // Default to pastel light theme; dark mode remains available.
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+  })();
+</script>
+<style>
+:root{
+  --paper:#fffafd; --surface:#ffffff; --surface-2:#f9f5fc; --ink:#2e2b38; --ink-soft:#454052;
+  --muted:#6c6678; --line:#eee4ed; --line-soft:#f5eef4;
+  --accent:#a15c83; --accent-2:#b9e3f8; --accent-3:#f6cfe4; --accent-4:#88cbe4;
+  --glass:rgba(255,255,255,.78); --glass-brd:rgba(99,83,119,.10);
+  --shadow:0 1px 2px rgba(81,62,104,.05),0 8px 30px rgba(81,62,104,.08);
+  --grad:linear-gradient(105deg,#f5bfdc 0%,#eae5fb 48%,#bce6fa 100%);
+  --maxw:1180px; --r:16px;
+}
+[data-theme="dark"]{
+  --paper:#171827; --surface:#202238; --surface-2:#282941; --ink:#f7f2fa; --ink-soft:#e6ddec;
+  --muted:#b8b2c8; --line:#3d3b57; --line-soft:#323247;
+  --accent:#f1b7d5; --accent-2:#b7e3f7; --accent-3:#dfd1f5; --accent-4:#a2d8eb;
+  --glass:rgba(27,29,45,.72); --glass-brd:rgba(240,233,255,.12);
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 12px 40px rgba(0,0,0,.4);
+  --grad:linear-gradient(105deg,#eeb2d2 0%,#d9d3f1 48%,#acd9ef 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:"Inter",system-ui,sans-serif;line-height:1.65;
+  font-feature-settings:"cv11","ss01";-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif;font-optical-sizing:auto;line-height:1.08;font-weight:600;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+::selection{background:color-mix(in srgb,var(--accent) 28%,transparent)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.eyebrow .n{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:600}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.section{padding:96px 0;position:relative;border-top:1px solid var(--line-soft)}
+.section h2{font-size:clamp(28px,4vw,42px);margin-top:10px}
+.lead{color:var(--muted);max-width:62ch;margin-top:14px;font-size:17px}
+.hairline{height:1px;background:var(--line);border:0;margin:16px 0}
+
+/* ---------- progress + nav ---------- */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad);z-index:100;transition:width .1s linear}
+header.nav{position:fixed;inset:0 0 auto 0;z-index:90;transition:all .35s cubic-bezier(.16,1,.3,1)}
+header.nav .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px;transition:all .35s}
+header.nav.scrolled{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:var(--glass);border-bottom:1px solid var(--glass-brd)}
+header.nav.scrolled .bar{height:58px}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Fraunces",serif;font-weight:600;font-size:16px}
+.logo{width:34px;height:34px;border-radius:9px;background:var(--grad);color:#fff;display:grid;place-items:center;font-family:"JetBrains Mono",monospace;font-weight:600;font-size:14px;box-shadow:0 4px 14px color-mix(in srgb,var(--accent) 40%,transparent)}
+.navlinks{display:flex;align-items:center;gap:4px}
+.navlinks a{padding:8px 12px;border-radius:9px;font-size:14px;color:var(--muted);transition:.2s;position:relative}
+.navlinks a:hover{color:var(--ink);background:color-mix(in srgb,var(--ink) 6%,transparent)}
+.navtools{display:flex;align-items:center;gap:8px}
+.iconbtn{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--muted);display:grid;place-items:center;cursor:pointer;font-size:19px;transition:.2s}
+.iconbtn:hover{color:var(--ink);border-color:var(--accent);transform:translateY(-1px)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:11px;padding:11px 18px;font-size:14px;font-weight:500;cursor:pointer;border:1px solid transparent;transition:.25s cubic-bezier(.16,1,.3,1);white-space:nowrap}
+.btn i{font-size:18px}
+.btn-accent{background:var(--grad);color:#fff;background-size:160% 160%;box-shadow:0 6px 20px color-mix(in srgb,var(--accent) 34%,transparent)}
+.btn-accent:hover{background-position:100% 50%;transform:translateY(-2px);box-shadow:0 10px 28px color-mix(in srgb,var(--accent) 44%,transparent)}
+.btn-outline{border-color:var(--line);color:var(--ink);background:var(--surface)}
+.btn-outline:hover{border-color:var(--accent);transform:translateY(-2px)}
+.btn-ghost{color:var(--muted)}
+.btn-ghost:hover{color:var(--accent)}
+.menubtn{display:none}
+.mobile{display:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:150px 0 70px;overflow:hidden}
+.aurora{position:absolute;inset:-20% -10% auto -10%;height:120%;z-index:-1;filter:blur(80px);opacity:.36;pointer-events:none}
+.aurora .blob{position:absolute;border-radius:50%;mix-blend-mode:normal;animation:float 16s ease-in-out infinite}
+.b1{width:42vw;height:42vw;background:radial-gradient(circle,#f4c3dd,transparent 65%);top:-8%;left:-6%}
+.b2{width:38vw;height:38vw;background:radial-gradient(circle,#b8e1fa,transparent 65%);top:-12%;right:-4%;animation-delay:-5s}
+.b3{width:34vw;height:34vw;background:radial-gradient(circle,#e8dff8,transparent 65%);top:18%;left:32%;animation-delay:-9s}
+[data-theme="dark"] .aurora{opacity:.4}
+.hero-grid{display:grid;grid-template-columns:1.6fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(34px,7vw,86px);margin:14px 0 0;font-weight:600;white-space:nowrap}
+.hero .tag{font-family:"Fraunces",serif;font-style:italic;font-size:clamp(20px,2.6vw,30px);margin-top:14px;color:var(--ink-soft)}
+/* Make only the "Consumer Lens" headline gradient easy to read in light mode. */
+.hero .tag .grad{
+  background:linear-gradient(100deg,#a94f7d 0%,#765d9a 50%,#367fa8 100%);
+  -webkit-background-clip:text; background-clip:text;
+  color:transparent; font-weight:500;
+}
+/* A light gradient remains readable against the dark background. */
+[data-theme="dark"] .hero .tag .grad{
+  background:linear-gradient(100deg,#f0adce 0%,#d6c5f2 50%,#a7daf3 100%);
+  -webkit-background-clip:text; background-clip:text;
+}
+
+.rotator{display:inline-block;min-width:1ch}
+.rotator b{font-weight:600}
+.hero .lead{font-size:18px;margin-top:18px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;position:relative;z-index:2}
+.meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;color:var(--muted);font-size:14px}
+.meta span{display:inline-flex;align-items:center;gap:7px}
+.meta i{color:var(--accent);font-size:17px}
+.portrait{position:relative}
+.portrait .ring{position:absolute;inset:-14px;border-radius:24px;background:var(--grad);opacity:.5;filter:blur(18px);animation:pulse 7s ease-in-out infinite}
+.portrait .frame{position:relative;aspect-ratio:4/5;border-radius:20px;overflow:hidden;border:1px solid var(--glass-brd);background:var(--surface-2);box-shadow:var(--shadow)}
+.portrait .frame img{width:100%;height:100%;object-fit:cover}
+.portrait .fallback{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:linear-gradient(160deg,var(--surface-2),var(--surface))}
+.portrait .fallback b{font-family:"Fraunces",serif;font-size:84px;color:var(--muted)}
+.scrollcue{display:flex;justify-content:center;margin-top:46px;color:var(--muted);font-size:24px;animation:bob 2s ease-in-out infinite}
+
+/* ---------- research-interest scroller (the showpiece) ---------- */
+.scroller{padding:54px 0;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);position:relative;overflow:hidden}
+.scroller::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 120% at 50% 50%,color-mix(in srgb,var(--accent) 9%,transparent),transparent);z-index:-1}
+.mq{display:flex;gap:18px;width:max-content;animation:scrollx 40s linear infinite}
+.mq.rev{animation-direction:reverse;margin-top:18px;animation-duration:46s}
+.scroller:hover .mq{animation-play-state:paused}
+.mqmask{-webkit-mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-size:15px;font-weight:500;white-space:nowrap;transition:.3s;position:relative}
+.chip i{font-size:19px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.chip:hover{transform:translateY(-4px) scale(1.04);border-color:transparent;box-shadow:0 10px 30px color-mix(in srgb,var(--accent) 24%,transparent);background:var(--surface)}
+.chip::after{content:"";position:absolute;inset:-1px;border-radius:999px;padding:1px;background:var(--grad);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:.3s}
+.chip:hover::after{opacity:1}
+
+/* ---------- generic cards / bento ---------- */
+.grid{display:grid;gap:18px}
+.cols-3{grid-template-columns:repeat(3,1fr)}
+.cols-2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;transition:.35s cubic-bezier(.16,1,.3,1);position:relative;overflow:hidden}
+.card:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line));box-shadow:var(--shadow)}
+.icard{position:relative}
+.icard .spot{position:absolute;inset:0;opacity:0;transition:opacity .3s;background:radial-gradient(220px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--accent) 16%,transparent),transparent 70%);pointer-events:none}
+.icard:hover .spot{opacity:1}
+.icard .ic{width:48px;height:48px;border-radius:13px;display:grid;place-items:center;font-size:24px;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);margin-bottom:16px;transition:.3s}
+.icard:hover .ic{transform:scale(1.08) rotate(-4deg);background:var(--grad);color:#fff}
+.icard .num{position:absolute;top:18px;right:22px;font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--muted)}
+.icard h3{font-size:21px}
+.icard p{color:var(--muted);font-size:14.5px;margin-top:8px}
+.rcard h4{font-size:18px;margin-top:12px}
+.rcard p{color:var(--muted);font-size:14px;margin-top:8px}
+.rcode{font-family:"JetBrains Mono",monospace;font-weight:600;font-size:13px;color:var(--accent)}
+.subhead{font-size:24px;margin:14px 0 4px}
+
+/* ---------- publications ---------- */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin:30px 0}
+.metric{background:var(--surface);padding:26px 16px;text-align:center}
+.metric b{font-family:"Fraunces",serif;font-size:clamp(30px,4vw,44px);font-weight:600;display:block;font-variant-numeric:tabular-nums}
+.metric span{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:4px;display:block}
+.filterbar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-bottom:18px}
+.filters{display:flex;gap:8px}
+.filters button{padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);font-size:14px;cursor:pointer;transition:.2s;font-family:inherit}
+.filters button[aria-pressed="true"]{background:var(--grad);color:#fff;border-color:transparent}
+.pub{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:24px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);margin-bottom:14px;transition:.3s}
+.pub:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line));transform:translateX(4px)}
+.pub .ref{font-family:"JetBrains Mono",monospace;color:var(--muted);font-size:14px}
+.pub h3{font-size:19px;line-height:1.3}
+.pub h3 a:hover{color:var(--accent)}
+.pub .auth{color:var(--muted);font-size:14.5px;margin-top:8px}
+.pub .auth b{color:var(--ink)}
+.pub .ven{color:var(--muted);font-size:14px;font-style:italic;margin-top:3px}
+.pub .doi{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted);margin-top:4px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 11px;border-radius:999px;font-size:12px;font-weight:500;background:color-mix(in srgb,var(--accent) 13%,transparent);color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 22%,transparent)}
+.badge.soft{background:transparent;color:var(--muted);border-color:var(--line)}
+.plink{font-size:13px;color:var(--muted);display:inline-flex;align-items:center;gap:3px;transition:.2s}
+.plink:hover{color:var(--accent)}
+
+/* ---------- timeline ---------- */
+.tl{position:relative;border-left:2px solid var(--line);padding-left:28px;margin-left:6px}
+.tl-item{position:relative;padding-bottom:32px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item .dot{position:absolute;left:-37px;top:4px;width:15px;height:15px;border-radius:50%;background:var(--grad);border:3px solid var(--paper);box-shadow:0 0 0 1px var(--line)}
+.tl-item .per{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--muted)}
+.tl-item h4{font-size:18px;margin-top:6px}
+.tl-item .org{font-size:14px;color:var(--ink-soft);font-weight:500;margin-top:2px}
+.tl-item p{color:var(--muted);font-size:14px;margin-top:8px}
+
+/* ---------- roadmap ---------- */
+.road{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.road .ph{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;position:relative;transition:.35s}
+.road .ph:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+.road .ph .no{width:30px;height:30px;border-radius:50%;background:color-mix(in srgb,var(--accent) 13%,transparent);color:var(--accent);font-family:"JetBrains Mono",monospace;font-weight:600;font-size:13px;display:grid;place-items:center}
+.road .ph .yr{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted);margin-top:14px}
+.road .ph h3{font-size:18px;margin-top:2px}
+.road .ph .th{color:var(--accent);font-size:13.5px;font-weight:500;margin-top:2px}
+.road .ph ul{list-style:none;margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.road .ph li{font-size:12.5px;color:var(--muted);display:flex;gap:8px;line-height:1.45}
+.road .ph li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent);margin-top:7px;flex:none}
+
+/* ---------- skills / awards / cv / contact ---------- */
+.skill h3{font-size:16px;color:var(--accent)}
+.skill ul{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:11px}
+.skill li{font-size:14px;color:var(--muted);display:flex;gap:10px;align-items:flex-start}
+.skill li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent);margin-top:8px;flex:none}
+.award{display:flex;gap:16px;padding:20px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);transition:.3s}
+.award:hover{border-color:color-mix(in srgb,var(--accent) 40%,var(--line));transform:translateY(-3px)}
+.award .yr{font-family:"JetBrains Mono",monospace;font-weight:600;color:var(--accent);font-size:14px}
+.award h3{font-size:15.5px;line-height:1.35}
+.award p{color:var(--muted);font-size:13.5px;margin-top:6px}
+.cvband{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:44px;box-shadow:var(--shadow)}
+.profiles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.prof{display:flex;align-items:center;gap:12px;padding:16px;border:1px solid var(--line);border-radius:13px;background:var(--paper);transition:.3s}
+.prof:hover{border-color:var(--accent);transform:translateY(-3px)}
+.prof .ic{width:42px;height:42px;border-radius:11px;background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);display:grid;place-items:center;font-size:21px}
+.prof small{color:var(--muted);display:block}
+.contact-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ccard{display:flex;align-items:center;gap:16px;padding:24px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);transition:.3s}
+.ccard:hover{border-color:var(--accent);transform:translateY(-3px)}
+.ccard .ic{width:50px;height:50px;border-radius:14px;background:var(--grad);color:#fff;display:grid;place-items:center;font-size:22px}
+.socials{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.socials a{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:14px;transition:.25s}
+.socials a:hover{color:var(--ink);border-color:var(--accent);transform:translateY(-2px)}
+footer{border-top:1px solid var(--line-soft);padding:54px 0 40px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+.foot a.fl{color:var(--muted);font-size:14px;transition:.2s;margin-right:16px}
+.foot a.fl:hover{color:var(--accent)}
+.foot .copy{margin-top:30px;padding-top:20px;border-top:1px solid var(--line-soft);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;color:var(--muted);font-size:13.5px;width:100%}
+
+/* ---------- reveal + keyframes ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(4%,5%) scale(1.08)}66%{transform:translate(-3%,2%) scale(.96)}}
+@keyframes pulse{0%,100%{opacity:.45;transform:scale(1)}50%{opacity:.7;transform:scale(1.04)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+@keyframes scrollx{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes spinslow{to{transform:rotate(360deg)}}
+
+/* ---------- responsive ---------- */
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .portrait{max-width:330px}
+  .cols-3{grid-template-columns:1fr 1fr}
+  .road{grid-template-columns:repeat(2,1fr)}
+  .navlinks{display:none}
+  .menubtn{display:grid}
+}
+@media(max-width:640px){
+  .section{padding:70px 0}
+  .cols-3,.cols-2,.profiles,.contact-cards{grid-template-columns:1fr}
+  .metrics{grid-template-columns:repeat(2,1fr)}
+  .road{grid-template-columns:1fr}
+  .cvband{padding:28px}
+  .hide-sm{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+.mobile.open{display:block}
+.mobile{position:fixed;inset:68px 0 auto 0;z-index:80;background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--glass-brd);padding:14px 24px}
+.mobile a{display:block;padding:12px 8px;color:var(--ink-soft);border-radius:8px;font-size:16px}
+.mobile a:hover{background:color-mix(in srgb,var(--ink) 6%,transparent)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* === 2026 enhancement pack === */
+body::before{content:"";position:fixed;inset:0;background:
+radial-gradient(circle at 18% 22%,rgba(248,195,222,.08),transparent 32%),
+radial-gradient(circle at 83% 28%,rgba(185,227,248,.10),transparent 34%);
+pointer-events:none;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:40px 40px;mask-image:radial-gradient(circle at center,black,transparent 80%);pointer-events:none;}
+.research-card-modern,.icard{cursor:pointer}
+.icard:hover{transform:translateY(-10px) scale(1.02)}
+.pub{position:relative}
+.pub::before{content:"CITED";position:absolute;top:12px;right:12px;background:var(--grad);color:#fff;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.08em}
+.chip:hover{box-shadow:0 0 24px color-mix(in srgb,var(--accent) 15%,transparent)}
+
+/* Light-mode text on pastel gradients: readable dark text */
+:root:not([data-theme="dark"]) .logo,
+:root:not([data-theme="dark"]) .btn-accent,
+:root:not([data-theme="dark"]) .filters button[aria-pressed="true"],
+:root:not([data-theme="dark"]) .icard:hover .ic,
+:root:not([data-theme="dark"]) .pub::before,
+:root:not([data-theme="dark"]) .ccard .ic { color:#303247; }
+
+
+/* CV-based teaching timeline and future photo gallery */
+.teaching-courses{margin-top:10px;padding-left:19px;color:var(--muted);font-size:14px;line-height:1.7}
+.teaching-courses li{margin:0 0 5px}
+.teaching-gallery-button{margin-top:18px}
+.teaching-gallery-panel{margin-top:42px;padding:28px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);scroll-margin-top:100px}
+.teaching-gallery-panel h3{font-size:23px;margin:12px 0}
+.teaching-gallery-empty{color:var(--muted);font-size:14px}
+.teaching-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:20px}
+.teaching-gallery-grid:empty{display:none}
+.teaching-gallery-grid figure{margin:0;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--surface-2)}
+.teaching-gallery-grid img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+@media(max-width:640px){.teaching-gallery-grid{grid-template-columns:1fr 1fr}.teaching-gallery-panel{padding:22px}}
+
+
+
+/* CV-based site updates | October 2026 */
+/* Prevent mobile overflow when footer navigation wraps. */
+footer .foot > div:nth-child(2){display:flex;flex-wrap:wrap;align-content:flex-start;gap:8px 16px;min-width:0;max-width:100%}
+footer .foot > div:nth-child(2) a.fl{margin-right:0}
+
+.about-paragraph{color:var(--muted);font-size:16.5px;line-height:1.9;margin-bottom:17px}
+.about-paragraph strong{color:var(--ink);font-weight:600}
+.text-link{color:var(--accent);font-weight:600;text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--accent) 42%,transparent);text-underline-offset:3px}
+.text-link:hover{text-decoration-color:var(--accent)}
+.glance-item{display:flex;align-items:flex-start;gap:12px}
+.glance-item i{font-size:20px;color:var(--accent)}
+.glance-item small{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;display:block}
+.glance-item div div{font-weight:500;font-size:14px}
+.cv-points{padding-left:18px;margin-top:11px;display:flex;flex-direction:column;gap:7px;color:var(--muted);font-size:13.5px;line-height:1.7}
+.cv-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}
+.mini-link{display:inline-flex;align-items:center;gap:5px;padding:6px 10px;color:var(--accent);font-size:12px;font-weight:600;background:color-mix(in srgb,var(--accent) 8%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 24%,var(--line));border-radius:8px;line-height:1.35}
+.mini-link:hover{background:color-mix(in srgb,var(--accent) 16%,var(--surface));border-color:var(--accent)}
+.leadership-wrap{margin-top:62px}
+.cv-small{padding:19px 22px}
+.cv-small h4,.confer-card h4{font-family:'Fraunces',serif;font-size:17px;line-height:1.35;margin:9px 0 7px}
+.cv-small p,.confer-card p{color:var(--muted);font-size:13px;line-height:1.65;margin-top:6px}
+.cv-small-org{color:var(--ink-soft)!important;font-weight:500}
+.confer-card{padding:20px 22px}
+.confer-card .eyebrow{font-size:10.5px;line-height:1.55}
+.confer-card h4{overflow-wrap:anywhere}
+.pub .tags{margin-top:11px}
+.pub:before{content:none!important} /* template's fictitious CITED pill was misleading */
+.research-note{padding:24px 27px}
+.teaching-portfolio{margin-top:46px;padding:34px;border:1px solid var(--line);background:var(--surface);border-radius:var(--r);scroll-margin-top:100px}
+.teaching-portfolio h3{font-size:clamp(22px,3.2vw,29px);margin-top:9px}
+.teaching-portfolio h4{font-family:'Fraunces',serif;font-size:20px;line-height:1.3;margin-top:10px}
+.portfolio-intro{font-size:15px;color:var(--muted);margin:12px 0 22px}
+.portfolio-grid{margin-top:20px}
+.portfolio-resource{background:var(--paper);padding:26px}
+.portfolio-resource-icon{font-size:25px;color:var(--accent)}
+.portfolio-resource p{font-size:14px;line-height:1.7;color:var(--muted);margin-top:9px}
+.portfolio-resource .resource-pending{font-size:13px;margin-top:15px;font-style:italic}
+.portfolio-resource .resource-link{margin-top:17px;white-space:normal;line-height:1.4}
+.portfolio-resource .resource-link[hidden]{display:none!important}
+.portfolio-photos{margin-top:35px;padding-top:29px;border-top:1px solid var(--line)}
+.portfolio-photos .teaching-gallery-empty{margin-top:11px}
+.portfolio-photos .teaching-gallery-grid{margin-top:19px}
+#contact .contact-cards{grid-template-columns:minmax(0,1fr);max-width:570px}
+#contact .ccard{max-width:570px}
+@media(max-width:980px){.about-grid{grid-template-columns:1fr!important}.section .grid[style*="1fr 1fr"]{column-gap:24px!important}}
+@media(max-width:640px){
+ .about-grid{grid-template-columns:1fr!important}
+ .section .grid[style*="1fr 1fr"],.section .grid[style*="repeat(4,1fr)"]{grid-template-columns:1fr!important}
+ .teaching-portfolio{padding:22px}
+ .portfolio-grid{grid-template-columns:1fr!important}
+ .cv-links{gap:7px}
+ .mini-link{font-size:11.5px}
+ .metrics .metric{padding:18px 10px}
+}
+
+
+/* Research Impact: scoped styles blend with existing pastel theme */
+#pricing-impact{scroll-margin-top:75px;background:linear-gradient(180deg,var(--paper),var(--surface-2) 56%,var(--paper))}
+#pricing-impact .lead{max-width:850px}
+.impact-feature{margin-top:34px;padding:34px 38px;border:1px solid var(--line);border-radius:22px;background:var(--surface);box-shadow:var(--shadow)}
+.impact-feature-top{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.impact-feature-date{font:600 11px 'JetBrains Mono',monospace;letter-spacing:.09em;color:var(--muted)}
+.impact-feature h3{font-size:clamp(25px,3vw,36px);margin:15px 0 11px}
+.impact-feature>p{font-size:15px;color:var(--muted);line-height:1.85;max-width:85ch}
+.impact-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:24px 0}
+.impact-facts>div{border:1px solid var(--line);background:var(--paper);border-radius:12px;padding:17px 21px}
+.impact-facts b{display:block;font-family:'Fraunces',Georgia,serif;font-size:clamp(22px,3vw,31px);line-height:1.2;color:var(--accent)}
+.impact-facts span{display:block;margin-top:6px;color:var(--muted);font-size:12px;line-height:1.5}
+.impact-actions{display:flex;gap:11px;flex-wrap:wrap}
+.impact-actions .btn{white-space:normal;justify-content:center;text-align:center}
+.impact-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:20px}
+.impact-card{padding:27px;display:flex;flex-direction:column;align-items:flex-start}
+.impact-policy-card{grid-column:1/-1;box-shadow:var(--shadow)}
+.impact-policy-card>p{max-width:100ch}
+.impact-policy-card .impact-link-list{margin-top:20px}
+.impact-card-head{display:flex;align-items:center;gap:10px;color:var(--accent);font:600 11px 'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.07em}
+.impact-card-head i{font-size:21px}
+.impact-card h3{font-size:22px;margin:13px 0 9px}
+.impact-card>p{font-size:14px;color:var(--muted);line-height:1.75}
+.impact-link-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:19px;align-items:stretch}
+.impact-link-list a{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;border:1px solid var(--line);border-radius:9px;padding:9px 12px;color:var(--ink);background:var(--paper);transition:.22s}
+.impact-link-list a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.impact-link-list i{font-size:14px}
+.impact-card .impact-context-note{font-size:12px;line-height:1.6;margin-top:14px;font-style:italic}
+.impact-footer-note{font-size:12px;color:var(--muted);line-height:1.7;margin-top:17px;max-width:92ch}
+.mini-link-impact{font-weight:700;background:var(--grad);color:#343047;border-color:transparent}
+.mini-link-impact:hover{background:var(--grad);color:#343047}
+.pub-doi-link{font-weight:600;color:var(--accent);border-bottom:1px solid color-mix(in srgb,var(--accent) 35%,transparent)}
+#publications .pub h3 a{color:inherit;transition:color .2s}
+#publications .pub h3 a:hover{color:var(--accent)}
+@media(max-width:1160px){header .navlinks{display:none}header .menubtn{display:grid}}
+@media(max-width:980px){.impact-feature{padding:26px}.impact-card-grid{gap:14px}}
+@media(max-width:640px){.impact-feature{padding:22px 19px}.impact-card-grid,.impact-facts{grid-template-columns:1fr}.impact-card{padding:23px 19px}.impact-actions .btn{width:100%}.impact-lead{font-size:15px}}
+
+
+/* Conference presentations and invited talks: full-width horizontal cards, with the date on the left */
+.horizontal-presentation-list{grid-template-columns:minmax(0,1fr);gap:14px}
+.horizontal-presentation-list .confer-card{
+  display:grid;
+  grid-template-columns:160px minmax(0,1fr);
+  column-gap:28px;
+  row-gap:5px;
+  align-items:start;
+  padding:24px 28px;
+}
+.horizontal-presentation-list .confer-card .eyebrow{
+  grid-row:1 / span 2;
+  padding-top:5px;
+}
+.horizontal-presentation-list .confer-card h4{
+  margin:0;
+  font-size:19px;
+}
+.horizontal-presentation-list .confer-card p{
+  grid-column:2;
+  margin:0;
+  line-height:1.65;
+}
+@media(max-width:640px){
+  .horizontal-presentation-list .confer-card{display:block;padding:21px}
+  .horizontal-presentation-list .confer-card .eyebrow{display:block;padding-top:0}
+  .horizontal-presentation-list .confer-card h4{margin:9px 0 6px;font-size:17px}
+  .horizontal-presentation-list .confer-card p{margin-top:5px}
+}
+
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<a class="sr-only" href="#top">Skip to content</a>
+<header class="nav" id="nav">
+<div class="wrap bar">
+<a class="brand" href="#top"><span aria-hidden="true" class="logo">NK</span><span class="hide-sm">Nayeon Kim</span></a>
+<nav class="navlinks">
+<a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a>
+<a href="#experience">Experience</a><a href="#pricing-impact">Impact</a><a href="#teaching">Teaching</a>
+<a href="#skills">Skills</a><a href="#awards">Honors</a><a href="#cv">CV</a><a href="#contact">Contact</a>
+</nav>
+<div class="navtools">
+<a class="btn btn-outline hide-sm" href="Nayeon_Kim_CV.pdf" rel="noopener" target="_blank"><i class="ti ti-file-text"></i>CV</a>
+<button aria-label="Toggle dark mode" class="iconbtn" id="theme"><i class="ti ti-moon"></i></button>
+<button aria-expanded="false" aria-label="Open menu" class="iconbtn menubtn" id="menubtn"><i class="ti ti-menu-2"></i></button>
+</div>
+</div>
+</header>
+<nav class="mobile" id="mobile">
+<a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a>
+<a href="#experience">Experience</a><a href="#pricing-impact">Impact</a><a href="#teaching">Teaching</a>
+<a href="#skills">Skills</a><a href="#awards">Honors</a><a href="#cv">CV</a><a href="#contact">Contact</a>
+<a href="Nayeon_Kim_CV.pdf" rel="noopener" target="_blank">Download CV ↗</a>
+</nav>
+<main id="top">
+<section class="hero">
+<div class="aurora"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+<div class="wrap hero-grid">
+<div>
+<p class="eyebrow reveal">PHD CANDIDATE IN CONSUMER ECONOMICS</p>
+<h1 class="reveal d1">Nayeon Kim</h1>
+<p class="tag reveal d2">Responsible AI through a <span class="grad">Consumer Lens</span></p>
+<p class="lead reveal d2">I am a doctoral researcher in Consumer Economics at the University of Georgia. My research explores how consumers prioritize competing AI values and make trade-offs among them. My work also examines how AI-driven technologies shape consumer experiences, decision-making, and autonomy across diverse contexts, such as algorithmic pricing.</p>
+<div class="cta reveal d3">
+<a class="btn btn-accent" href="#research">Explore research <i class="ti ti-arrow-right"></i></a>
+<a class="btn btn-outline" href="Nayeon_Kim_CV.pdf" rel="noopener" target="_blank"><i class="ti ti-download"></i>Curriculum Vitae</a>
+<a class="btn btn-outline" href="https://scholar.google.com/citations?user=OaBz5uAAAAAJ&amp;hl=en&amp;oi=ao" rel="noopener" target="_blank"><i class="ti ti-school"></i>Google Scholar</a>
+</div>
+<div class="meta reveal d3">
+<span><i class="ti ti-map-pin"></i>Athens, GA, USA</span>
+<span><i class="ti ti-school"></i>PhD · 2024 – Present</span>
+</div>
+</div>
+<div class="portrait reveal d2">
+<div class="ring"></div>
+<div class="frame">
+<img alt="Portrait of Nayeon Kim" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="profile.jpg"/>
+<div class="fallback" style="display:none"><b>NK</b><span class="eyebrow">Nayeon Kim</span></div>
+</div>
+</div>
+</div>
+<div class="scrollcue"><i class="ti ti-chevron-down"></i></div>
+</section>
+<section aria-label="Research interests" class="scroller">
+<div class="mqmask">
+<div class="mq" data-dup=""><span class="chip"><i class="ti ti-shield-check"></i>Responsible AI</span><span class="chip"><i class="ti ti-scale"></i>Algorithmic Fairness</span><span class="chip"><i class="ti ti-users"></i>Consumer Preferences</span><span class="chip"><i class="ti ti-heart"></i>Consumer Well-Being</span><span class="chip"><i class="ti ti-brain"></i>AI Decision-Making</span><span class="chip"><i class="ti ti-chart-bar"></i>Consumer Economics</span></div>
+</div>
+<div class="mqmask">
+<div class="mq rev" data-dup=""><span class="chip"><i class="ti ti-currency-dollar"></i>AI Financial Advice</span><span class="chip"><i class="ti ti-shopping-cart"></i>Algorithmic Pricing</span><span class="chip"><i class="ti ti-home"></i>AI-enabled Housing</span><span class="chip"><i class="ti ti-arrows-exchange"></i>Value Trade-offs</span><span class="chip"><i class="ti ti-clipboard-data"></i>Statistical Analysis</span><span class="chip"><i class="ti ti-device-analytics"></i>Consumer Research</span></div>
+</div>
+</section>
+<section class="section" id="about">
+<div class="wrap">
+<p class="eyebrow reveal"><span class="n">01</span> / Biography</p>
+<h2 class="reveal">About the researcher</h2>
+<div class="grid about-grid" style="grid-template-columns:1.7fr 1fr;gap:48px;margin-top:34px">
+<div class="reveal">
+<p class="about-paragraph">I am a Ph.D. candidate in Consumer Economics at the <a class="text-link" href="https://www.fcs.uga.edu/fhce/fhce" rel="noopener noreferrer" target="_blank">University of Georgia</a>. My research focuses on <strong>responsible AI, consumer well-being, and algorithmic decision-making</strong>, with particular interest in how consumers assess competing AI values and the trade-offs among them.</p>
+<p class="about-paragraph">Alongside my doctoral studies, I am pursuing an M.S. in Data Science at the University of Georgia. I earned an M.S. in Consumer Science from <a class="text-link" href="https://www.inu.ac.kr/" rel="noopener noreferrer" target="_blank">Incheon National University</a>, where I graduated with the <strong>Graduate Dean’s Award for Excellence</strong> (GPA: 4.50/4.50). I also earned a B.S. in Consumer Science and a B.B.A. from the same university with <strong>Highest Honors</strong> (GPA: 4.33/4.50).</p>
+<p class="about-paragraph">I am a Research Assistant with <a class="text-link" href="https://www.consumerreports.org/community-reports/" rel="noopener noreferrer" target="_blank">Consumer Reports</a>, contributing to participatory research, outreach, and statistical analyses of AI-enabled pricing practices. I also serve as an Instructor for FHCE 2100E: Introduction to Consumer Economics at the University of Georgia.</p>
+<div class="cta"><a class="btn btn-outline" href="https://www.fcs.uga.edu/people/bio/nayeon-kim" rel="noopener noreferrer" target="_blank"><i class="ti ti-user-circle"></i>My UGA Bio <i class="ti ti-external-link"></i></a><a class="btn btn-outline" href="https://www.fcs.uga.edu/fhce/fhce" rel="noopener noreferrer" target="_blank"><i class="ti ti-school"></i>UGA FHCE <i class="ti ti-external-link"></i></a></div>
+</div>
+<div class="reveal d1">
+<div class="card" style="position:sticky;top:90px">
+<p class="eyebrow" style="margin-bottom:18px">At a glance</p>
+<div style="display:flex;flex-direction:column;gap:16px">
+<div class="glance-item"><i class="ti ti-school"></i><div><small>Position</small><div>Ph.D. Candidate · Instructor</div></div></div>
+<div class="glance-item"><i class="ti ti-building-arch"></i><div><small>Institution</small><div>University of Georgia</div></div></div>
+<div class="glance-item"><i class="ti ti-users"></i><div><small>Research</small><div>Responsible AI · Consumer Well-Being</div></div></div>
+<div class="glance-item"><i class="ti ti-map-pin"></i><div><small>Based in</small><div>Athens, GA, USA</div></div></div>
+</div>
+<hr class="hairline"/>
+<div class="socials" style="margin-top:0">
+<a href="https://scholar.google.com/citations?user=OaBz5uAAAAAJ&amp;hl=en&amp;oi=ao" rel="noopener noreferrer" target="_blank"><i class="ti ti-school"></i>Scholar</a>
+<a href="https://github.com/LionNayeon" rel="noopener noreferrer" target="_blank"><i class="ti ti-brand-github"></i>GitHub</a>
+<a href="https://orcid.org/0009-0007-4083-528X" rel="noopener noreferrer" target="_blank"><i class="ti ti-fingerprint"></i>ORCID</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="research"><div class="wrap">
+<p class="eyebrow reveal"><span class="n">02</span> / Research Interests</p><h2 class="reveal">Areas of inquiry</h2>
+<p class="lead reveal">Research at the intersection of consumer economics, responsible AI, and algorithmic decision-making.</p>
+<div class="grid cols-3" style="margin-top:36px"><div class="card icard reveal"><span class="spot"></span><span class="num">01</span><div class="ic"><i class="ti ti-shield-check"></i></div><h3>Responsible AI</h3><p>How principles of responsible AI relate to consumer preferences and decision-making.</p></div>
+<div class="card icard reveal"><span class="spot"></span><span class="num">02</span><div class="ic"><i class="ti ti-scale"></i></div><h3>Algorithmic Fairness</h3><p>Public preferences and trade-offs between predictive performance and fairness in AI decisions.</p></div>
+<div class="card icard reveal"><span class="spot"></span><span class="num">03</span><div class="ic"><i class="ti ti-heart-handshake"></i></div><h3>Consumer Well-Being</h3><p>How technology-mediated consumer experiences relate to decision-making, autonomy, and well-being.</p></div>
+<div class="card icard reveal"><span class="spot"></span><span class="num">04</span><div class="ic"><i class="ti ti-report-analytics"></i></div><h3>AI-Enabled Financial Advice</h3><p>Psychological factors underlying consumers’ reliance on AI financial advice.</p></div>
+<div class="card icard reveal"><span class="spot"></span><span class="num">05</span><div class="ic"><i class="ti ti-tags"></i></div><h3>Algorithmic Pricing</h3><p>AI-enabled pricing practices and their implications for price disparities and fairness concerns.</p></div>
+<div class="card icard reveal"><span class="spot"></span><span class="num">06</span><div class="ic"><i class="ti ti-home-heart"></i></div><h3>AI-Enabled Housing</h3><p>Consumer autonomy and perceived allocation of agency in AI-enabled housing environments.</p></div></div>
+<div class="research-note card reveal" style="margin-top:30px"><p class="eyebrow">Research approach</p><p style="color:var(--muted);margin-top:12px">My research employs choice-based conjoint analysis, survey experiments, regression and mediation analyses, and qualitative and computational content analysis. Through these approaches, I examine how consumers evaluate AI systems, weigh competing values, and make trade-offs in their decision-making.</p></div>
+</div></section>
+<section class="section" id="publications"><div class="wrap">
+<p class="eyebrow reveal"><span class="n">03</span> / Publications &amp; Presentations</p><h2 class="reveal">Research &amp; scholarly output</h2>
+<p class="lead reveal">Selected publications, manuscripts under review, and presentations from my curriculum vitae. For the latest publication information, see <a class="text-link" href="https://scholar.google.com/citations?user=OaBz5uAAAAAJ&amp;hl=en&amp;oi=ao" rel="noopener noreferrer" target="_blank">Google Scholar</a>.</p>
+<p class="reveal" style="font-size:13px;color:var(--muted);margin-top:10px"><span aria-hidden="true">*</span> Only first-author publications and refereed conference presentations are listed.</p>
+<div class="metrics reveal">
+<div class="metric"><b data-count="5">5</b><span>Journal articles</span></div><div class="metric"><b data-count="2">2</b><span>Under review</span></div><div class="metric"><b data-count="5">5</b><span>Refereed presentations</span></div><div class="metric"><b data-count="3">3</b><span>Invited talks &amp; research presentations</span></div>
+</div>
+<h3 class="subhead reveal">Papers under review</h3><div style="margin-top:18px"><article class="pub reveal" data-type="Under Review"><div class="ref">[01]</div><div>
+<h3>The Financial Confidence Paradox: Competing Psychological Pathways to Interest in AI Financial Advice</h3>
+<p class="auth"><b>Kim, N.</b>, &amp; Chatterjee, S.</p><p class="ven">International Journal of Consumer Studies</p>
+<div class="tags"><span class="badge">Under review</span></div>
+</div></article>
+<article class="pub reveal" data-type="Under Review"><div class="ref">[02]</div><div>
+<h3>Who Gets the Advantage? Unpacking Public Preferences for Performance–Fairness Trade-offs in AI Decision-Making</h3>
+<p class="auth"><b>Kim, N.</b>, &amp; Peng, Y.</p><p class="ven">CHI 2027</p>
+<div class="tags"><span class="badge">Under review</span></div>
+</div></article></div>
+<h3 class="subhead reveal" style="margin-top:42px">Peer-reviewed journal publications</h3><div style="margin-top:18px"><article class="pub reveal" data-type="Journal"><div class="ref">[03]</div><div>
+<h3><a href="https://doi.org/10.1108/APJML-04-2024-0534" rel="noopener noreferrer" target="_blank">The Effect of Meta-commerce Consumption Value on Consumer Satisfaction and Continuous Usage Intention: The Moderating Roles of Metaverse Involvement and Consumer Competency</a></h3>
+<p class="auth"><b>Kim, N.</b>, &amp; Kim, W. H.</p><p class="ven">Asia Pacific Journal of Marketing and Logistics, 37(4), 1130–1149. · 2025</p>
+<div class="tags"><span class="badge">SSCI</span><a class="plink pub-doi-link" href="https://doi.org/10.1108/APJML-04-2024-0534" rel="noopener noreferrer" target="_blank"><i class="ti ti-external-link"></i>Read publication (DOI)</a></div>
+</div></article>
+<article class="pub reveal" data-type="Journal"><div class="ref">[04]</div><div>
+<h3><a href="https://doi.org/10.16914/ar.2023.138.77" rel="noopener noreferrer" target="_blank">The Effects of NFT Characteristics on the Intention to Purchase NFT: An Extended Technology Acceptance Model</a></h3>
+<p class="auth"><b>Kim, N.</b>, &amp; Yoo, W.</p><p class="ven">Advertising Research, 138, 77–106. · 2023</p>
+<div class="tags"><span class="badge">KCI</span><a class="plink pub-doi-link" href="https://doi.org/10.16914/ar.2023.138.77" rel="noopener noreferrer" target="_blank"><i class="ti ti-external-link"></i>Read publication (DOI)</a></div>
+</div></article>
+<article class="pub reveal" data-type="Journal"><div class="ref">[05]</div><div>
+<h3><a href="https://doi.org/10.15790/cope.2023.19.3.031" rel="noopener noreferrer" target="_blank">The Effect of NFT Consumption Value on Purchase Intention: Focused on the Moderating Effect of Perceived Risk and Generation</a></h3>
+<p class="auth"><b>Kim, N.</b>, &amp; Kim, W. H.</p><p class="ven">Consumer Policy and Education Review, 19(3), 31–53. · 2023</p>
+<div class="tags"><span class="badge">KCI</span><a class="plink pub-doi-link" href="https://doi.org/10.15790/cope.2023.19.3.031" rel="noopener noreferrer" target="_blank"><i class="ti ti-external-link"></i>Read publication (DOI)</a></div>
+</div></article>
+<article class="pub reveal" data-type="Journal"><div class="ref">[06]</div><div>
+<h3><a href="https://doi.org/10.55387/JCI.2023.05.02.01" rel="noopener noreferrer" target="_blank">The Effect of Over the Top (OTT) Service Platform Characteristics on Consumer Satisfaction and Continuous Usage Intention</a></h3>
+<p class="auth"><b>Kim, N.</b>, &amp; Kim, W. H.</p><p class="ven">Journal of Contents and Industry, 5(2), 1–7. · 2023</p>
+<div class="tags"><span class="badge">KCI</span><a class="plink pub-doi-link" href="https://doi.org/10.55387/JCI.2023.05.02.01" rel="noopener noreferrer" target="_blank"><i class="ti ti-external-link"></i>Read publication (DOI)</a></div>
+</div></article>
+<article class="pub reveal" data-type="Journal"><div class="ref">[07]</div><div>
+<h3><a href="https://doi.org/10.31336/JTLR.2022.2.34.2.297" rel="noopener noreferrer" target="_blank">The Relationship Between Selection Attributes of Vegetarian Home Meal Replacements (HMR), Customer Satisfaction, and Repurchase Intention</a></h3>
+<p class="auth"><b>Kim, N.</b>, Kim, S., Ryu, C., &amp; Kim, W. H.</p><p class="ven">Journal of Tourism and Leisure Research, 34(2), 297–315. · 2022</p>
+<div class="tags"><span class="badge">KCI</span><a class="plink pub-doi-link" href="https://doi.org/10.31336/JTLR.2022.2.34.2.297" rel="noopener noreferrer" target="_blank"><i class="ti ti-external-link"></i>Read publication (DOI)</a></div>
+</div></article></div>
+<div class="reveal" style="text-align:right;margin-top:15px"><a class="btn btn-outline" href="https://scholar.google.com/citations?user=OaBz5uAAAAAJ&amp;hl=en&amp;oi=ao" rel="noopener noreferrer" target="_blank"><i class="ti ti-school"></i>View Google Scholar <i class="ti ti-external-link"></i></a></div>
+<h3 class="subhead reveal" style="margin-top:52px">Refereed conference presentations</h3><div class="grid conference-presentations-list horizontal-presentation-list" style="margin-top:20px"><div class="card confer-card reveal"><span class="eyebrow">2026, October · Oral presentation</span><h4>Whose home, whose control? Agency in AI-enabled housing</h4><p><b>Kim, N.</b></p><p>Housing Education and Research Association (HERA) Annual Conference · Athens, GA</p></div>
+<div class="card confer-card reveal"><span class="eyebrow">2026, April · Paper presentation</span><h4>Through a moral lens: Moral foundations and public acceptance of artificial intelligence across contexts</h4><p><b>Kim, N.</b>, &amp; Peng, Y.</p><p>American Council on Consumer Interests (ACCI) Annual Conference · Long Beach, CA</p></div>
+<div class="card confer-card reveal"><span class="eyebrow">2025, November · Paper presentation</span><h4>Dining and delivery spending: Insights from household financial search behavior</h4><p><b>Kim, N.</b></p><p>Housing Education and Research Association (HERA) Annual Conference · Blacksburg, VA</p></div>
+<div class="card confer-card reveal"><span class="eyebrow">2023, June · Poster presentation</span><h4>The effect of NFT consumption value on purchase intention: The moderating role of perceived risk and generation</h4><p><b>Kim, N.</b>, &amp; Kim, W. H.</p><p>Korean Society of Consumer Policy and Education Conference · Seoul, South Korea</p></div>
+<div class="card confer-card reveal"><span class="eyebrow">2022, May · Paper presentation</span><h4>The effect of over-the-top (OTT) service platform characteristics on consumer satisfaction and continuous usage intention</h4><p><b>Kim, N.</b>, &amp; Kim, W. H.</p><p>Korean Consumption Culture Association Conference · Incheon, South Korea</p></div>
+</div>
+<h3 class="subhead reveal" style="margin-top:48px">Invited talks &amp; research presentations</h3><div class="grid invited-talks-list horizontal-presentation-list" style="margin-top:20px"><div class="card confer-card reveal"><span class="eyebrow">2026, March</span><h4>The Black Box of Grocery Pricing</h4><p>Invited Guest Lecture · FHCE 3100: Consumer Decision Making · University of Georgia</p></div>
+<div class="card confer-card reveal"><span class="eyebrow">2026, March</span><h4>Same AI, Different Reactions: The Difference Lies in Our Moral Values</h4><p>Departmental Finalist · Inaugural Three Minute Research (3MR) Competition · University of Georgia</p></div>
+<div class="card confer-card reveal"><span class="eyebrow">2024, May</span><h4>Building Your Academic Path: Graduate Study and Extracurricular Activities</h4><p>Invited Guest Lecture · Online Consumer Behavior Analysis · Incheon National University</p></div></div>
+</div></section>
+<section class="section" id="experience"><div class="wrap">
+<p class="eyebrow reveal"><span class="n">04</span> / Experience &amp; Education</p>
+<h2 class="reveal">Academic &amp; professional trajectory</h2>
+<p class="lead reveal">Education, research experience, and professional contributions across consumer research, advocacy, and consumer science.</p>
+<div class="grid cols-2" style="margin-top:36px;gap:48px">
+<div><p class="eyebrow reveal" style="margin-bottom:22px">Education</p><div class="tl"><div class="tl-item reveal"><span class="dot"></span><div class="per">2024 – Present</div><h4>Ph.D. in Consumer Economics</h4><div class="org">University of Georgia · Athens, GA, USA</div>
+<ul class="cv-points"><li>Committee: Yilang Peng (Chair), Swarn Chatterjee, Daehwan Ahn</li></ul></div><div class="tl-item reveal"><span class="dot"></span><div class="per">2026 – Present</div><h4>M.S. in Data Science</h4><div class="org">University of Georgia · Athens, GA, USA</div>
+</div><div class="tl-item reveal"><span class="dot"></span><div class="per">2022 – 2024</div><h4>M.S. in Consumer Science</h4><div class="org">Incheon National University · Incheon, Republic of Korea</div>
+<ul class="cv-points"><li>GPA: 4.50/4.50 · Graduate Dean’s Award for Excellence</li></ul></div><div class="tl-item reveal"><span class="dot"></span><div class="per">2019 – 2022</div><h4>B.S. in Consumer Science and B.B.A.</h4><div class="org">Incheon National University · Incheon, Republic of Korea</div>
+<ul class="cv-points"><li>GPA: 4.33/4.50 · Graduated with Highest Honors</li></ul></div></div></div>
+<div><p class="eyebrow reveal" style="margin-bottom:22px">Professional Experience</p><div class="tl"><div class="tl-item reveal"><span class="dot"></span><div class="per">Aug 2025 – Present</div><h4>Research Assistant, Community Reports</h4><div class="org">Consumer Reports · Yonkers, NY, USA</div>
+<ul class="cv-points"><li>Contribute to research and outreach projects under Consumer Reports’ Community Reports initiative.</li><li>Support a participatory AI project using Pol.is to examine consumer opinions about AI.</li><li>Contributed statistical analysis and methodological feedback for Instacart AI-enabled pricing investigations.</li><li>Conducted statistical cross-checks for a report on Uber and Lyft AI-driven pricing practices.</li></ul><div class="cv-links"><a class="mini-link mini-link-impact" href="#pricing-impact"><i class="ti ti-chart-arcs-3"></i>View AI Pricing Impact <i class="ti ti-arrow-right"></i></a><a class="mini-link" href="https://www.consumerreports.org/community-reports/" rel="noopener noreferrer" target="_blank"><i class="ti ti-external-link"></i>Community Reports</a><a class="mini-link" href="https://www.consumerreports.org/money/questionable-business-practices/instacart-ai-pricing-experiment-inflating-grocery-bills-a1142182490/" rel="noopener noreferrer" target="_blank"><i class="ti ti-external-link"></i>Instacart investigation</a><a class="mini-link" href="https://groundworkcollaborative.org/work/instacart/" rel="noopener noreferrer" target="_blank"><i class="ti ti-external-link"></i>Same Cart, Different Price</a><a class="mini-link" href="https://www.consumerreports.org/money/questionable-business-practices/uber-lyft-different-prices-for-same-ride-and-fake-discounts-a1093538909/" rel="noopener noreferrer" target="_blank"><i class="ti ti-external-link"></i>Uber &amp; Lyft investigation</a></div></div><div class="tl-item reveal"><span class="dot"></span><div class="per">2022</div><h4>Administrative Assistant</h4><div class="org">Korean Consumption Culture Association · Incheon, Republic of Korea</div>
+<ul class="cv-points"><li>Supported academic conference operations, financial administration, and coordination with journal editorial offices.</li></ul><div class="cv-links"><a class="mini-link" href="https://www.kcca1997.org/html/" rel="noopener noreferrer" target="_blank"><i class="ti ti-world"></i>Website<i class="ti ti-external-link"></i></a></div></div><div class="tl-item reveal"><span class="dot"></span><div class="per">May 2022 – Sep 2022</div><h4>Committee Member, Millennials &amp; Gen Z “SHIFT” Committee</h4><div class="org">Korea Baseball Organization · Seoul, Republic of Korea</div>
+<ul class="cv-points"><li>Participated in strategic discussions on post-COVID league attendance and sustainability.</li><li>Collaborated with professionals in gaming, sports, and marketing to develop youth engagement initiatives.</li></ul><div class="cv-links"><a class="mini-link" href="https://eng.koreabaseball.com/" rel="noopener noreferrer" target="_blank"><i class="ti ti-world"></i>Website<i class="ti ti-external-link"></i></a><a class="mini-link" href="https://www.instagram.com/kbo.official/" rel="noopener noreferrer" target="_blank"><i class="ti ti-brand-instagram"></i>Instagram<i class="ti ti-external-link"></i></a></div></div><div class="tl-item reveal"><span class="dot"></span><div class="per">2022</div><h4>Consumer Panel</h4><div class="org">Orion Confectionery · Seoul, Republic of Korea</div>
+<ul class="cv-points"><li>Conducted sensory evaluations and product testing, providing feedback on product concepts and brand positioning.</li></ul><div class="cv-links"><a class="mini-link" href="https://www.orionworld.com/en/" rel="noopener noreferrer" target="_blank"><i class="ti ti-world"></i>Website<i class="ti ti-external-link"></i></a><a class="mini-link" href="https://www.instagram.com/orion_world/" rel="noopener noreferrer" target="_blank"><i class="ti ti-brand-instagram"></i>Instagram<i class="ti ti-external-link"></i></a></div></div><div class="tl-item reveal"><span class="dot"></span><div class="per">Jul 2021 – Aug 2021</div><h4>Summer Intern</h4><div class="org">Citizens’ Alliance for Consumer Protection of Korea · Seoul, Republic of Korea</div>
+<ul class="cv-points"><li>Supported consumer protection efforts by reviewing report manuscripts, analyzing consumer counseling data, and monitoring potentially misleading medical-device advertisements.</li></ul><div class="cv-links"><a class="mini-link" href="http://www.consumerskorea.org/" rel="noopener noreferrer" target="_blank"><i class="ti ti-world"></i>Website<i class="ti ti-external-link"></i></a></div></div></div></div>
+</div>
+<div class="leadership-wrap reveal">
+<p class="eyebrow">Beyond the classroom</p><h3 class="subhead">Leadership &amp; Engagement</h3>
+<div class="grid cols-2" style="margin-top:24px"><div class="card cv-small reveal"><span class="eyebrow">2026 – Present</span><h4>Member, Phi Upsilon Omicron (Chi Chapter)</h4><p class="cv-small-org">National Honor Society in Family and Consumer Sciences · Athens, GA, USA</p><p>Selected for membership based on academic achievement in the top 35% of students in UGA’s College of Family and Consumer Sciences.</p><div class="cv-links"><a class="mini-link" href="https://www.phiu.org/" rel="noopener noreferrer" target="_blank"><i class="ti ti-award"></i>Phi Upsilon Omicron<i class="ti ti-external-link"></i></a></div></div>
+<div class="card cv-small reveal"><span class="eyebrow">2026 – Present</span><h4>Member, Participatory AI Research Network</h4><p class="cv-small-org">Coalition for Independent Technology Research · Virtual, USA</p><p>Engage with researchers and practitioners across academia, journalism, and civil society to exchange insights on participatory AI evaluation.</p><div class="cv-links"><a class="mini-link" href="https://independenttechresearch.org/participatory-ai-research-network/" rel="noopener noreferrer" target="_blank"><i class="ti ti-users-group"></i>Research Network<i class="ti ti-external-link"></i></a></div></div>
+<div class="card cv-small reveal"><span class="eyebrow">Aug 2021 – Feb 2022</span><h4>Participant, Overseas Food Consumer Investigation Project</h4><p class="cv-small-org">Citizens’ Alliance for Consumer Protection of Korea · Seoul, Republic of Korea</p><p>Investigated imported foods and assisted in product testing and ingredient analysis.</p></div>
+<div class="card cv-small reveal"><span class="eyebrow">2021</span><h4>Student Ambassador</h4><p class="cv-small-org">Incheon National University · Incheon, Republic of Korea</p><p>Represented the university through social media content creation, campus tours, and official event coordination.</p><div class="cv-links"><a class="mini-link" href="https://www.youtube.com/@IncheonNationalUniversity/videos" rel="noopener noreferrer" target="_blank"><i class="ti ti-brand-youtube"></i>INU YouTube<i class="ti ti-external-link"></i></a><a class="mini-link" href="https://www.instagram.com/inu_dream/" rel="noopener noreferrer" target="_blank"><i class="ti ti-brand-instagram"></i>INU Instagram<i class="ti ti-external-link"></i></a></div></div>
+<div class="card cv-small reveal"><span class="eyebrow">2021</span><h4>President, Academic Club, Department of Consumer Science</h4><p class="cv-small-org">Incheon National University · Incheon, Republic of Korea</p><p>Strengthened faculty–student communication and led the club to second place among 84 university clubs.</p></div>
+<div class="card cv-small reveal"><span class="eyebrow">2020</span><h4>Event &amp; Marketing Assistant, Sports &amp; Entertainment Crew</h4><p class="cv-small-org">SK Wyverns (now SSG Landers) · Incheon, Republic of Korea</p><p>Proposed and implemented fan engagement initiatives at professional baseball games.</p><div class="cv-links"><a class="mini-link" href="https://www.ssglanders.com/main" rel="noopener noreferrer" target="_blank"><i class="ti ti-world"></i>SSG Landers Website<i class="ti ti-external-link"></i></a></div></div>
+<div class="card cv-small reveal"><span class="eyebrow">2020</span><h4>Member, Customized On-Site Practical Problem Research Team</h4><p class="cv-small-org">Incheon National University · Incheon, Republic of Korea</p><p>Analyzed illegal parking patterns in Incheon and proposed data-informed policy recommendations.</p></div></div>
+</div>
+</div></section><section aria-labelledby="impact-heading" class="section impact-section" id="pricing-impact">
+<div class="wrap">
+<p class="eyebrow reveal"><span class="n">05</span> / Research Impact</p>
+<h2 class="reveal" id="impact-heading">AI-driven pricing: research &amp; public impact</h2>
+<p class="lead reveal impact-lead">Evidence, public coverage, and policy attention surrounding Consumer Reports' investigation into Instacart's AI-enabled pricing experiments.</p>
+<div class="impact-feature reveal">
+<div class="impact-feature-top"><span class="badge"><i class="ti ti-chart-bar"></i> My contribution: Statistical analysis</span><span class="impact-feature-date">DEC 2025</span></div>
+<h3>Same cart. Different prices.</h3>
+<p>As a Consumer Reports research assistant, I contributed statistical analysis to the joint investigation with Groundwork Collaborative and More Perfect Union. The study documented price differences for identical grocery items and shopping baskets shown to different shoppers at the same time. The Consumer Reports article credits my statistical analysis.</p>
+<div class="impact-facts"><div><b>Up to 23%</b><span>Item-level price differences observed</span></div><div><b>Dec 22, 2025</b><span>Instacart announced an end to item price tests</span></div></div>
+<div class="impact-actions">
+<a class="btn btn-accent" href="https://www.consumerreports.org/money/questionable-business-practices/instacart-ai-pricing-experiment-inflating-grocery-bills-a1142182490/" rel="noopener noreferrer" target="_blank"><i class="ti ti-file-text"></i>Read original investigation <i class="ti ti-external-link"></i></a>
+<a class="btn btn-outline" href="https://groundworkcollaborative.org/work/instacart/" rel="noopener noreferrer" target="_blank"><i class="ti ti-clipboard-data"></i>Joint research report <i class="ti ti-external-link"></i></a>
+</div>
+</div>
+<div class="impact-card-grid">
+<article class="card impact-card reveal">
+<div class="impact-card-head"><i class="ti ti-news"></i><span>News &amp; press</span></div>
+<h3>National coverage</h3>
+<p>Coverage of the investigation and its findings across major news outlets.</p>
+<div class="impact-link-list">
+<a href="https://apnews.com/article/c9a0a52e959ce46d2152aa664308d228" rel="noopener noreferrer" target="_blank">Associated Press <i class="ti ti-external-link"></i></a>
+<a href="https://www.latimes.com/business/story/2025-12-11/instacart-is-charging-different-prices-to-different-customers-in-dangerous-ai-experiment-report-says" rel="noopener noreferrer" target="_blank">Los Angeles Times <i class="ti ti-external-link"></i></a>
+<a href="https://www.nbcnewyork.com/news/local/schumer-slams-alleged-instacart-artificial-intelligence-powered-price-changes/6430369/" rel="noopener noreferrer" target="_blank">NBC: Public response <i class="ti ti-external-link"></i></a>
+</div>
+</article>
+<article class="card impact-card reveal d1">
+<div class="impact-card-head"><i class="ti ti-brand-youtube"></i><span>Video coverage</span></div>
+<h3>Watch the story</h3>
+<p>Video reporting and a behind-the-scenes discussion of the investigation.</p>
+<div class="impact-link-list">
+<a href="https://www.youtube.com/watch?v=U5Rt7aPBDUE" rel="noopener noreferrer" target="_blank">Good Morning America <i class="ti ti-brand-youtube"></i></a>
+<a href="https://www.youtube.com/watch?v=_I6qF2d3uYc" rel="noopener noreferrer" target="_blank">Consumer Reports: Talking Carts <i class="ti ti-brand-youtube"></i></a>
+</div>
+</article>
+<article class="card impact-card reveal">
+<div class="impact-card-head"><i class="ti ti-building-bank"></i><span>Regulatory attention</span></div>
+<h3>Calls for FTC scrutiny</h3>
+<p>U.S. senators requested an FTC investigation into Instacart's pricing following the public research. This was a request for review, not an FTC enforcement finding about the experiments.</p>
+<div class="impact-link-list">
+<a href="https://www.klobuchar.senate.gov/public/index.cfm/2025/12/klobuchar-booker-colleagues-press-the-ftc-to-investigate-instacart-s-dynamic-pricing" rel="noopener noreferrer" target="_blank">Senators' FTC letter (Dec 2025) <i class="ti ti-external-link"></i></a>
+<a href="https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-seeks-comment-enforcement-policy-statement-regarding-personalized-pricing" rel="noopener noreferrer" target="_blank">FTC personalized-pricing policy (2026) <i class="ti ti-external-link"></i></a>
+</div>
+<p class="impact-context-note">The 2026 FTC proposal is broader policy context, not a claimed direct outcome of this project.</p>
+</article>
+<article class="card impact-card reveal d1">
+<div class="impact-card-head"><i class="ti ti-arrows-exchange"></i><span>Company response</span></div>
+<h3>Instacart ends price tests</h3>
+<p>On December 22, 2025, Instacart announced it would discontinue its item-level price experiments on the platform after the investigation and public criticism.</p>
+<div class="impact-link-list">
+<a href="https://www.consumerreports.org/media-room/press-releases/2025/12/instacart-ends-ai-driven-pricing-practice-following-a-joint-consumer-reports-investigation-with-groundwork-collaborative-and-more-perfect-union/" rel="noopener noreferrer" target="_blank">Consumer Reports announcement <i class="ti ti-external-link"></i></a>
+<a href="https://www.reuters.com/business/instacart-ends-ai-driven-price-experiments-after-criticism-2025-12-22/" rel="noopener noreferrer" target="_blank">Reuters coverage <i class="ti ti-external-link"></i></a>
+</div>
+</article>
+<article aria-label="Maryland HB 895 legislation and testimony" class="card impact-card impact-policy-card reveal">
+<div class="impact-card-head"><i class="ti ti-scale"></i><span>State policy impact · Maryland · 2026</span></div>
+<h3>Maryland's Protection from Predatory Pricing Act (HB 895)</h3>
+<p>In testimony submitted to Maryland lawmakers in February 2026, Consumer Reports cited the joint Instacart investigation, including its findings on AI-enabled grocery price experiments, and recommended extending the legislation to third-party grocery delivery platforms. Maryland subsequently enacted HB 895 (Chapter 154), effective October 1, 2026, addressing certain dynamic-pricing and consumer-data pricing practices.</p>
+<div class="impact-link-list">
+<a href="https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/hb0895?ys=2026rs" rel="noopener noreferrer" target="_blank">Maryland HB 895 · Official legislation <i class="ti ti-external-link"></i></a>
+<a href="https://mgaleg.maryland.gov/cmte_testimony/2026/ecm/121rt2CMq0HzedzUkBygxVfYtgZh9RNs9.pdf" rel="noopener noreferrer" target="_blank">Consumer Reports legislative testimony (PDF) <i class="ti ti-external-link"></i></a>
+<a href="https://advocacy.consumerreports.org/press_release/consumer-reports-statement-on-the-signing-of-marylands-protection-from-predatory-pricing-act-into-law/" rel="noopener noreferrer" target="_blank">Consumer Reports response to the enacted law <i class="ti ti-external-link"></i></a>
+</div>
+<p class="impact-context-note">This shows a documented use of the investigation in policy advocacy, not proof that the investigation itself caused the law to pass. Consumer Reports also expressed concern that amendments left loopholes and weak enforcement in the final law.</p>
+</article>
+</div>
+<p class="impact-footer-note">The investigation and follow-up developments are reported by the linked organizations. The study concerns randomized item-price experiments; the broader debate over personalized or surveillance pricing is distinct.</p>
+</div>
+</section>
+<!-- Teaching roles and courses reproduced from Nayeon Kim's CV (October 2026). -->
+<section class="section" id="teaching">
+<div class="wrap">
+<p class="eyebrow reveal"><span class="n">06</span> / Teaching Experience</p>
+<h2 class="reveal">Teaching experience</h2>
+<p class="lead reveal">Instruction and teaching assistance in consumer economics and consumer science.</p>
+<div class="grid cols-2" style="margin-top:36px;gap:48px">
+<div class="reveal">
+<p class="eyebrow" style="margin-bottom:22px">Instructor</p>
+<div class="tl">
+<div class="tl-item">
+<span class="dot"></span>
+<div class="per">2026 – Present</div>
+<h4>Instructor</h4>
+<div class="org">University of Georgia · Athens, GA, USA</div>
+<p>FHCE 2100E Introduction to Consumer Economics (Present)</p>
+<a class="btn btn-outline teaching-gallery-button" href="#teaching-portfolio"><i class="ti ti-book-2"></i> Teaching Portfolio <i class="ti ti-arrow-right"></i></a>
+</div>
+</div>
+</div>
+<div class="reveal d1">
+<p class="eyebrow" style="margin-bottom:22px">Teaching Assistant</p>
+<div class="tl">
+<div class="tl-item">
+<span class="dot"></span>
+<div class="per">2024 – 2026</div>
+<h4>Teaching Assistant</h4>
+<div class="org">University of Georgia · Athens, GA, USA</div>
+<ul class="teaching-courses">
+<li>FHCE 2100E Introduction to Consumer Economics (2024 – 2026)</li>
+<li>FHCE 3100 Consumer Decision Making (2024 – 2026)</li>
+<li>FHCE 5100/7100 Consumer Policy (2024)</li>
+</ul>
+</div>
+<div class="tl-item">
+<span class="dot"></span>
+<div class="per">2022 – 2023</div>
+<h4>Teaching Assistant</h4>
+<div class="org">Incheon National University · Incheon, Republic of Korea</div>
+<ul class="teaching-courses">
+<li>Customer Service (2023)</li>
+<li>Food Service Entrepreneurship and Marketing (2023)</li>
+<li>Online Consumer Behavior Analysis (2023)</li>
+<li>Quantitative Methods in Consumer Research (2023)</li>
+<li>Consumer Typology Analysis (2022)</li>
+<li>Service Market Analysis (2022)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Upload teaching-1.jpg through teaching-6.jpg to the same GitHub repository folder as index.html.
+         The gallery loads any images that exist automatically, without another HTML edit. -->
+<div class="teaching-portfolio reveal" id="teaching-portfolio">
+<p class="eyebrow">Teaching Portfolio</p><h3>Teaching philosophy &amp; classroom highlights</h3>
+<p class="portfolio-intro">A space for my teaching statement, course materials, and classroom highlights. Additional materials will be shared here as they become available.</p>
+<div class="grid cols-2 portfolio-grid">
+<div class="portfolio-resource card">
+<div class="portfolio-resource-icon"><i class="ti ti-file-description"></i></div>
+<h4>Teaching Statement</h4>
+<p>My approach to teaching, learning goals, and reflections on student learning.</p>
+<p class="resource-pending" id="statement-pending">Teaching statement coming soon.</p>
+<a class="btn btn-outline resource-link" data-file="Teaching_Statement.pdf" hidden="" href="Teaching_Statement.pdf" rel="noopener noreferrer" target="_blank"><i class="ti ti-file-type-pdf"></i> Read Teaching Statement <i class="ti ti-external-link"></i></a>
+</div>
+<div class="portfolio-resource card">
+<div class="portfolio-resource-icon"><i class="ti ti-notebook"></i></div>
+<h4>Course Materials</h4>
+<p>Selected examples from FHCE 2100E: Introduction to Consumer Economics.</p>
+<p class="resource-pending" id="materials-pending">Teaching materials coming soon.</p>
+<a class="btn btn-outline resource-link" data-file="Teaching_Materials.pdf" hidden="" href="Teaching_Materials.pdf" rel="noopener noreferrer" target="_blank"><i class="ti ti-file-type-pdf"></i> View Course Materials <i class="ti ti-external-link"></i></a>
+</div>
+</div>
+<div class="portfolio-photos"><p class="eyebrow">Classroom Moments</p><h4>Teaching highlights</h4>
+<p class="teaching-gallery-empty" id="teaching-gallery-empty">Classroom photos and highlights will be added here soon.</p>
+<div aria-live="polite" class="teaching-gallery-grid" id="teaching-gallery-grid"></div></div>
+</div>
+</div>
+</section>
+<section class="section" id="skills"><div class="wrap">
+<p class="eyebrow reveal"><span class="n">07</span> / Skills</p><h2 class="reveal">Research toolkit</h2>
+<p class="lead reveal">Languages and analytical tools listed in my curriculum vitae.</p>
+<div class="grid cols-2" style="margin-top:34px">
+<div class="card skill reveal"><h3>Programming &amp; Statistical Tools</h3><ul><li>Python · NumPy · pandas · scikit-learn</li><li>R</li><li>SPSS</li><li>AMOS</li></ul></div>
+<div class="card skill reveal d1"><h3>Languages</h3><ul><li>Korean</li><li>English</li></ul></div>
+</div>
+</div></section>
+<section class="section" id="awards">
+<div class="wrap">
+<p class="eyebrow reveal"><span class="n">08</span> / Awards &amp; Honors</p>
+<h2 class="reveal">Awards &amp; Honors</h2>
+<p class="lead reveal">Scholarships, academic awards, competitive recognitions, and research funding.</p>
+<div class="grid cols-2" style="margin-top:34px">
+<div class="award reveal"><span class="yr">2025 – 2026</span><div><h3>FHCE Departmental Travel Funding</h3><p>University of Georgia</p></div></div>
+<div class="award reveal d1"><span class="yr">2025</span><div><h3>Hazel and Gene Franklin Scholarship ($4,800 USD)</h3><p>University of Georgia</p></div></div>
+<div class="award reveal"><span class="yr">2024</span><div><h3>Virginia Wilbanks Kilgore Scholarship ($2,300 USD)</h3><p>University of Georgia</p></div></div>
+<div class="award reveal d1"><span class="yr">2024</span><div><h3>23rd Hackers Bridge Scholarship ($10,000 USD)</h3><p>HACKERS Education Group</p></div></div>
+<div class="award reveal"><span class="yr">2024</span><div><h3>Graduate Dean’s Award for Excellence</h3><p>Incheon National University</p></div></div>
+<div class="award reveal d1"><span class="yr">2022</span><div><h3>Academic Research Grant ($1,500 USD)</h3><p>Korean Society of Consumer Policy and Education</p></div></div>
+<div class="award reveal"><span class="yr">2021</span><div><h3>Student Ambassador Scholarship ($3,000 USD)</h3><p>Incheon National University</p></div></div>
+<div class="award reveal d1"><span class="yr">2021</span><div><h3>2nd Place, Academic Club Competition</h3><p>Incheon National University</p></div></div>
+<div class="award reveal"><span class="yr">2021</span><div><h3>Encouragement Award, INU Great Books Debate Competition</h3><p>Incheon National University</p></div></div>
+<div class="award reveal d1"><span class="yr">2020</span><div><h3>Grand Prize, Traditional Market Activation Project Competition</h3><p>Incheon National University</p></div></div>
+<div class="award reveal"><span class="yr">2020</span><div><h3>Encouragement Award, X-Corps Festival: Practical Problem Research Competition</h3><p>Practical Problem Research Council; Hosted by Ministry of Science and ICT</p></div></div>
+<div class="award reveal d1"><span class="yr">2020</span><div><h3>Excellence Award, 6th Consumer Speech Contest</h3><p>Consumers Union of Incheon</p></div></div>
+<div class="award reveal"><span class="yr">2020</span><div><h3>Excellence Award, 54th Conference Idea Competition</h3><p>The Korea Academic Society of Tourism and Leisure</p></div></div>
+<div class="award reveal d1"><span class="yr">2019 – 2020</span><div><h3>Academic Excellence Scholarship</h3><p>Incheon National University</p></div></div>
+<div class="award reveal"><span class="yr">2020</span><div><h3>Undergraduate Scholarship ($1,000 USD)</h3><p>Incheon Institute for Talent &amp; Lifelong Education</p></div></div>
+<div class="award reveal d1"><span class="yr">2019</span><div><h3>Excellence Award, 5th Consumer Speech Contest</h3><p>Consumers Union of Incheon</p></div></div>
+<div class="award reveal"><span class="yr">2019</span><div><h3>Undergraduate Scholarship ($1,000 USD)</h3><p>Scholarship Foundation for Incheon National University</p></div></div>
+</div>
+</div>
+</section>
+<section class="section" id="cv">
+<div class="wrap">
+<div class="cvband reveal">
+<div class="grid" style="grid-template-columns:1fr 1fr;gap:40px;align-items:center">
+<div>
+<p class="eyebrow">Curriculum Vitae</p>
+<h2 style="font-size:clamp(26px,3.4vw,38px);margin-top:10px">Full academic CV &amp; profiles</h2>
+<p class="lead">Download my curriculum vitae or explore academic and professional profiles.</p>
+<div class="cta">
+<a class="btn btn-accent" href="Nayeon_Kim_CV.pdf" rel="noopener" target="_blank"><i class="ti ti-download"></i>Download CV</a>
+<a class="btn btn-outline" href="https://scholar.google.com/citations?user=OaBz5uAAAAAJ&amp;hl=en&amp;oi=ao" rel="noopener" target="_blank"><i class="ti ti-school"></i>Google Scholar</a>
+</div>
+</div>
+<div class="profiles">
+<a class="prof" href="https://scholar.google.com/citations?user=OaBz5uAAAAAJ&amp;hl=en&amp;oi=ao" rel="noopener" target="_blank"><span class="ic"><i class="ti ti-school"></i></span><span><b style="font-size:14px">Google Scholar</b><small>Citations &amp; metrics</small></span></a>
+<a class="prof" href="https://orcid.org/0009-0007-4083-528X" rel="noopener" target="_blank"><span class="ic"><i class="ti ti-fingerprint"></i></span><span><b style="font-size:14px">ORCID</b><small>0009-0007-4083-528X</small></span></a>
+<a class="prof" href="https://github.com/LionNayeon" rel="noopener" target="_blank"><span class="ic"><i class="ti ti-brand-github"></i></span><span><b style="font-size:14px">GitHub</b><small>@LionNayeon</small></span></a>
+<a class="prof" href="https://www.linkedin.com/in/nayeon-kim-a73b53192/" rel="noopener" target="_blank"><span class="ic"><i class="ti ti-brand-linkedin"></i></span><span><b style="font-size:14px">LinkedIn</b><small>in/nayeon-kim-a73b53192</small></span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="contact">
+<div class="wrap">
+<p class="eyebrow reveal"><span class="n">10</span> / Contact</p>
+<h2 class="reveal">Open to collaboration</h2>
+<p class="lead reveal">I welcome conversations with fellow researchers, prospective collaborators, and students interested in responsible AI and consumer economics. Please feel free to reach out about research collaborations, interdisciplinary projects, or opportunities to exchange ideas about how AI shapes consumer experiences and decision-making.</p>
+<div class="contact-cards reveal" style="margin-top:30px">
+<a class="ccard" href="mailto:mykite12@uga.edu"><span class="ic"><i class="ti ti-mail"></i></span><span><small style="color:var(--muted);text-transform:uppercase;font-size:12px;letter-spacing:.06em">University</small><div style="font-weight:500">mykite12@uga.edu</div></span></a>
+</div>
+<div class="socials reveal d1">
+<a href="https://scholar.google.com/citations?user=OaBz5uAAAAAJ&amp;hl=en&amp;oi=ao" rel="noopener" target="_blank"><i class="ti ti-school"></i>Google Scholar</a>
+<a href="https://github.com/LionNayeon" rel="noopener" target="_blank"><i class="ti ti-brand-github"></i>GitHub</a>
+<a href="https://orcid.org/0009-0007-4083-528X" rel="noopener" target="_blank"><i class="ti ti-fingerprint"></i>ORCID</a>
+<a href="https://www.linkedin.com/in/nayeon-kim-a73b53192/" rel="noopener" target="_blank"><i class="ti ti-brand-linkedin"></i>LinkedIn</a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<div class="foot">
+<div style="max-width:340px">
+<a class="brand" href="#top"><span aria-hidden="true" class="logo">NK</span>Nayeon Kim</a>
+<p style="color:var(--muted);font-size:14px;margin-top:12px">PhD Candidate in Consumer Economics · University of Georgia.</p>
+</div>
+<div>
+<a class="fl" href="#about">About</a><a class="fl" href="#research">Research</a><a class="fl" href="#pricing-impact">Impact</a><a class="fl" href="#publications">Publications</a><a class="fl" href="#teaching">Teaching</a><a class="fl" href="#contact">Contact</a>
+</div>
+<div class="copy">
+<span>© <span id="yr">2026</span> Nayeon Kim. Adapted from the original template by <a class="plink" href="https://github.com/tanviranjumjoarder/portfolio-showcase" rel="noopener" target="_blank">Tanvir Anjum Joarder</a>.</span>
+<span>Designed &amp; built for the web · Hosted on <a class="plink" href="https://pages.github.com/" rel="noopener" target="_blank">GitHub Pages</a></span>
+</div>
+</div>
+</div>
+</footer>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Person", "name": "Nayeon Kim", "url": "https://lionnayeon.github.io/", "image": "https://lionnayeon.github.io/profile.jpg", "jobTitle": "PhD Candidate in Consumer Economics", "sameAs": ["https://github.com/LionNayeon", "https://www.linkedin.com/in/nayeon-kim-a73b53192/", "https://scholar.google.com/citations?user=OaBz5uAAAAAJ&hl=en&oi=ao", "https://orcid.org/0009-0007-4083-528X"], "knowsAbout": ["Responsible AI", "Consumer Economics", "Algorithmic Fairness", "Consumer Preferences"], "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Georgia"}}
+</script>
+<script>
+(function(){
+  var root=document.documentElement;
+  var tbtn=document.getElementById('theme');
+  function syncIcon(){tbtn.innerHTML='<i class="ti ti-'+(root.getAttribute('data-theme')==='dark'?'sun':'moon')+'"></i>';}
+  syncIcon();
+  tbtn.addEventListener('click',function(){var n=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n);}catch(e){}syncIcon();});
+  var mb=document.getElementById('menubtn'),mob=document.getElementById('mobile');
+  mb.addEventListener('click',function(){var o=mob.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.innerHTML='<i class="ti ti-'+(o?'x':'menu-2')+'"></i>';});
+  mob.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mob.classList.remove('open');mb.setAttribute('aria-expanded','false');mb.innerHTML='<i class="ti ti-menu-2"></i>';});});
+  var nav=document.getElementById('nav'),prog=document.getElementById('progress');
+  function onScroll(){var y=window.scrollY||0;nav.classList.toggle('scrolled',y>10);var h=document.documentElement.scrollHeight-window.innerHeight;prog.style.width=(h>0?(y/h*100):0)+'%';}
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var rev=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+    rev.forEach(function(el){io.observe(el);});
+  } else { rev.forEach(function(el){el.classList.add('in');}); }
+  document.querySelectorAll('[data-dup]').forEach(function(t){t.innerHTML+=t.innerHTML;});
+  function animateCount(el){var target=+el.getAttribute('data-count'),dur=1400,t0=null;if(reduce){el.textContent=target;return;}function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);el.textContent=Math.round(target*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);}
+  var counted=false,metricsEl=document.querySelector('.metrics');
+  if(metricsEl && 'IntersectionObserver' in window){var mo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!counted){counted=true;document.querySelectorAll('.metric b').forEach(animateCount);}});},{threshold:0.4});mo.observe(metricsEl);}
+  else if(metricsEl){document.querySelectorAll('.metric b').forEach(animateCount);}
+  document.querySelectorAll('.icard').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px');});});
+  var fbtns=document.querySelectorAll('.filters button'),pubs=document.querySelectorAll('#publist .pub');
+  fbtns.forEach(function(b){b.addEventListener('click',function(){fbtns.forEach(function(x){x.setAttribute('aria-pressed','false');});b.setAttribute('aria-pressed','true');var f=b.getAttribute('data-f');pubs.forEach(function(p){p.style.display=(f==='All'||p.getAttribute('data-type')===f)?'':'none';});});});
+  var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();
+})();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+document.querySelectorAll('.icard').forEach(c=>{
+c.addEventListener('click',()=>{c.classList.toggle('active')})
+});
+document.querySelectorAll('.chip').forEach(ch=>{
+ch.title='Research Interest';
+});
+});
+</script>
+<script>
+(function(){
+  // Teaching documents appear only after the named PDFs exist in the website root.
+  document.querySelectorAll('.resource-link[data-file]').forEach(function(link){
+    var file=link.getAttribute('data-file');
+    fetch(file,{method:'HEAD',cache:'no-store'}).then(function(r){
+      if(!r.ok) return;
+      link.hidden=false;
+      var pending=link.parentElement.querySelector('.resource-pending');
+      if(pending) pending.hidden=true;
+    }).catch(function(){});
+  });
+  // Optional teaching-1.jpg ... teaching-6.jpg photos (keep placeholders until supplied).
+  var grid=document.getElementById('teaching-gallery-grid');
+  var empty=document.getElementById('teaching-gallery-empty');
+  if(!grid||!empty)return;
+  for(var i=1;i<=6;i++){
+    (function(num){
+      var picture=new Image();
+      picture.alt='Teaching highlight '+num;
+      picture.onload=function(){
+        var frame=document.createElement('figure');
+        frame.appendChild(picture);grid.appendChild(frame);empty.hidden=true;
+      };
+      picture.onerror=function(){};
+      picture.src='teaching-'+num+'.jpg';
+    })(i);
+  }
+})();
+</script>
+</body>
+</html>
